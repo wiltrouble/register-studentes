@@ -41,8 +41,8 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
-        title: 'Add Student',
-        path: '/add',
+        title: 'Registration',
+        path: '/register',
         icon: <IoIcons.IoMdPersonAdd />,
         cName: 'nav-text'
     }
