@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import RegisterForm from '../components/RegisterForm'
+import StudentList from '../components/StudentList';
 import { db } from "../firebase/firebase";
 
 const Register = () => {
@@ -36,7 +37,14 @@ const Register = () => {
 
     return (
         <div className="register">
-            <RegisterForm addOrEditStudent={addOrEditStudent}></RegisterForm>
+            <div className="row">
+                <div className="col-md-9">
+                    <RegisterForm addOrEditStudent={addOrEditStudent}></RegisterForm>
+                </div>
+                <div className="col-md-3">
+                    <StudentList></StudentList>
+                </div>
+            </div>
         </div>
     )
 }

@@ -36,8 +36,6 @@ const RegisterForm = (props) => {
     }
 
     return (
-        <div className="row">
-            <div className="col-md-9">
                 <form onSubmit={handleSubmit}>
                     <small>Children information</small>
                     <div className="form-row">
@@ -163,29 +161,6 @@ const RegisterForm = (props) => {
                     </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
-            </div>
-            <div className="col-md-3">
-
-            <div className="input-group">
-    <input type="text" className="form-control" placeholder="Search this blog"/>
-    <div className="input-group-append">
-      <button className="btn btn-secondary" type="button">
-        <i className="fa fa-search"></i>
-      </button>
-    </div>
-  </div>
-                <p>wilson</p>
-                <p>wilson</p>
-                <p>wilson</p>
-                <p>wilson</p>
-                <p>wilson</p>
-                <p>wilson</p>
-                <p>wilson</p>
-                <p>wilson</p>
-                <p>wilson</p>
-                <p>wilson</p>
-            </div>   
-        </div>
     )
 }
 
