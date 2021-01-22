@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Reports from './pages/Reports';
 import Products from './pages/Products';
 import Register from './pages/Register';
+import Login from './components/Login'
 
 function App() {
   return (
@@ -12,9 +13,9 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <div className="container">
+          <div className="container h-75">
           <Route path='/' exact component={Home}/>
-          <Route path='/reports' exact component={Reports}/>
+          <Route path='/login' exact component={Login}/>
           <Route path='/products' exact component={Products}/>
           <Route path='/register' exact component={Register}/>
           </div>
